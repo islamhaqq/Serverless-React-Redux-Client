@@ -10,9 +10,8 @@ import { Route, Switch } from 'react-router-dom'
 import Home from './containers/Home'
 
 // define routes for every component
-export default () => {
+export default () =>
   <Switch>
     {/* The default page of the app renders the Home component. */}
     <Route path="/" component={Home} exact />
   </Switch>
-}
