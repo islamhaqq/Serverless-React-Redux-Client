@@ -5,8 +5,8 @@
 import React, { Component } from 'react'
 import RaisedButton from 'material-ui/RaisedButton'
 
-import logo from '../logo.svg'
-import '../App.css'
+import logo from '../assets/logos/logo.svg'
+import '../assets/styles/App.css'
 
 const style = {
   margin: 12,
