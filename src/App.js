@@ -7,6 +7,8 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 
 import Routes from './Routes'
 
+import './assets/styles/App.css'
+
 class App extends Component {
   constructor(props) {
     super(props)
