@@ -47,10 +47,13 @@ class App extends Component {
     return (
       // inject Material UI styles
       <MuiThemeProvider>
-        <div className="App">
+        {/* Fixed width container. */}
+        <div className="App container">
+          {/* Navbar that fits to the container. */}
           <Navbar fluid collapseOnSelect>
             <Navbar.Header>
               <Navbar.Brand>
+                {/* Link to homepage. */}
                 <Link to="/">Scratch</Link>
               </Navbar.Brand>
             </Navbar.Header>
