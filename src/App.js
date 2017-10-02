@@ -4,7 +4,7 @@
 
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
-import { Navbar } from 'react-bootstrap'
+import { Navbar, Nav, NavItem } from 'react-bootstrap'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 
 import Routes from './Routes'
@@ -58,7 +58,15 @@ class App extends Component {
                 {/* Link to homepage. */}
                 <Link to="/">Scratch</Link>
               </Navbar.Brand>
+              <Navbar.Toggle />
             </Navbar.Header>
+            {/* Dropdown menu that aligns to the right of the button. */}
+            <Navbar.Collapse>
+              <Nav pullRight>
+                <NavItem href="/signup">Signup</NavItem>
+                <NavItem href="/login">Login</NavItem>
+              </Nav>
+            </Navbar.Collapse>
           </Navbar>
           <Routes />
         </div>
