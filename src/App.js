@@ -7,6 +7,8 @@ import { Link } from 'react-router-dom'
 import { Navbar } from 'react-bootstrap'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 
+import Routes from './Routes'
+
 import './assets/styles/App.css'
 
 class App extends Component {
@@ -58,6 +60,7 @@ class App extends Component {
               </Navbar.Brand>
             </Navbar.Header>
           </Navbar>
+          <Routes />
         </div>
       </MuiThemeProvider>
     )
