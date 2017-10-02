@@ -3,9 +3,9 @@
  */
 
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
+import { Navbar } from 'react-bootstrap'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
-
-import Routes from './Routes'
 
 import './assets/styles/App.css'
 
@@ -48,8 +48,13 @@ class App extends Component {
       // inject Material UI styles
       <MuiThemeProvider>
         <div className="App">
-          {/* Child components are rendered here based on user navigation. */}
-          <Routes />
+          <Navbar fluid collapseOnSelect>
+            <Navbar.Header>
+              <Navbar.Brand>
+                <Link to="/">Scratch</Link>
+              </Navbar.Brand>
+            </Navbar.Header>
+          </Navbar>
         </div>
       </MuiThemeProvider>
     )
