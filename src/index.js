@@ -6,13 +6,13 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter as Router } from "react-router-dom"
 
-import './assets/styles/index.css'
 import App from './App'
 import registerServiceWorker from './registerServiceWorker'
+import './assets/styles/index.css'
 
-// render the root component and render the child components based on route,
-// according to react router configuration
+// render the root component and render the child components based on route
 ReactDOM.render(
+  // use BrowserRouter as the router to utilize the browser's History API
   <Router>
     <App />
   </Router>,
