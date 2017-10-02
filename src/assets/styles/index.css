@@ -7,3 +7,17 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: "PT-Serif", serif;
 }
+
+
+/* prevent mobile browser zoom on focus by setting minimum font size */
+
+select.form-control, textarea.form-control, input.form-control {
+  font-size: 16px;
+}
+
+
+/* prevent mobile page from overflowing and adding a scrollbar by setting width of the input type file */
+
+input[type=file] {
+  width: 100%;
+}
